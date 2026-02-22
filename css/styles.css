@@ -1,28 +1,319 @@
 body {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   color: #212121; /* Tasarımdaki baskın renk */
   background-color: #ffffff;
 }
+header {
+  display: flex;
+  align-items: center; /* Elemanları dikeyde ortalar */
+  border-bottom: 1px solid #e7e9fc; /* Tasarımdaki alt çizgi */
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: 76px;
+  left: 156px;
+  gap: 24px;
+  margin: 0 auto; /* Sağdan ve soldan otomatik boşluk bırakarak ortalar */
+  padding: 0 100px;
+  grid-auto-flow: horizontal;
+  display: flex;
+}
+.web {
+  color: #4d5ae5;
+}
+.studio {
+  color: #2e2f42;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-h1{
+.nav-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-decoration: none;
+  padding: 24px 0;
+  display: block;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf;
+}
+.contacts-list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.contacts-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455; /* Figma'daki Slate rengi */
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #404bbf; 
+}
+header .container {
+  display: flex;
+  align-items: center; /* Dikeyde ortalar */
+}
+.contacts {
+  font-style: normal; /* Address etiketinin varsayılan italikliğini kaldırır */
+  margin-left: auto; /* İletişim bilgilerini en sağa iter */
+}
+.hero-section {
+  background-color: #2e2f42;
+  padding: 188px;
+  text-align: center;
+}
+.hero-section h1 {
   color: #ffffff;
   font-size: 56px;
   font-style: bold;
   font-weight: 700;
 }
-h2{
+.hero-section button {
+  width: 169px;
+  height: 56px;
+  top: 428px;
+  left: 636px;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  background-color: #4d5ae5;
+  color: #ffffff;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  font-style: medium;
+  font-size: 16px;
+  line-height: 24px;
+}
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
+.features-list {
+  display: flex; /* Öğeleri yan yana dizer */
+  gap: 24px; /* Öğeler arasındaki boşluk (Figma'ya göre güncelleyebilirsiniz) */
+  list-style: none; /* Liste işaretlerini kaldırır */
+  padding: 0;
+}
+.features-item {
+  width: calc((100% - 72px) / 4); /* 4 öğeyi eşit genişlikte böler */
+  width: 264px; /* Figma'daki genişlik değeri */
+}
+
+.features-item h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42; /* Figma'daki Navy Blue rengi */
+  margin-bottom: 8px; /* Başlık ve metin arasındaki boşluk */
+}
+
+.features-item p {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455; /* Metin rengi (Slate) */
+}
+h2 {
   font-size: 36px;
-  color: #2E2F42;
+  color: #2e2f42;
   font-style: bold;
   font-weight: 700;
-  }
-h3{
-  color: #2E2F42;
+}
+h3 {
+  color: #2e2f42;
   font-size: 20px;
   font-style: medium;
   font-weight: 500;
 }
-p{
+p {
   font-size: 16px;
   font-weight: 400;
+}
+
+.our-container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+.our-section {
+  background-color: #f4f4fd;
+}
+.our-section h2 {
+  color: #2e2f42;
+  font-size: 36px;
+  font-style: bold;
+  font-weight: 700;
+  font-family: "roboto", sans-serif;
+  text-align: center;
+}
+.our-list {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+}
+.our-item {
+  width: calc((100% - 72px) / 4); /* 4 öğeyi eşit genişlikte böler */
+  width: 264px; /* Figma'daki genişlik değeri */
+}
+
+/* Kartın genel stili */
+.our-item {
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px; /* Sadece alt köşeleri yuvarlatır */
+  box-shadow:
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2); /* Figma'daki Drop Shadow */
+}
+
+/* Metinlerin olduğu iç kısım */
+.card-content {
+  padding: 32px 0; /* Figma'daki 32px padding değerine göre */
+  text-align: center;
+}
+
+/* Resmin kartın üst kısmına tam oturması için */
+.our-item img {
+  display: block;
+  width: 100%;
+}
+.portfolio-container {
+  background-color: #e7e9fc;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio-section {
+  background-color: #e7e9fc;
+  text-align: center;
+  width: 1440px;
+  height: 1240px;
+  top: 1748px;
+  border: 1px;
+  padding: 120px 0;
+}
+.portfolio-section h2 {
+  color: #2e2f42;
+  font-size: 36px;
+  font-style: bold;
+  font-weight: 700;
+  font-family: "roboto", sans-serif;
+  text-align: center;
+}
+.portfolio-list {
+  display: flex; /* Öğeleri yan yana dizer */
+  gap: 24px; /* Öğeler arasındaki boşluk (Figma'ya göre güncelleyebilirsiniz) */
+  list-style: none; /* Liste işaretlerini kaldırır */
+  padding: 0;
+}
+.portfolio-item {
+  width: calc((100% - 48px) / 3);
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px; /* Sadece alt köşeleri yuvarlatır */
+  box-shadow:
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2); /* Figma'daki Drop Shadow */
+}
+.second-card-content {
+  padding: 32px 0;
+  text-align: left;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+.second-card-content h3 {
+  margin-bottom: 8px;
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+}
+.second-card-content p {
+  color: #434455;
+  font-size: 16px;
+  margin: 0;
+}
+.portfolio-item img {
+  display: block;
+  width: 100%;
+}
+.footer {
+  width: 1440px;
+  height: 312px;
+  background-color: #2e2f42;
+  padding: 100px 0;
+}
+.footer-container {
+  background-color: #2e2f42;
+  width: 1440px;
+  height: 312px;
+  display: flex;
+  align-items: baseline;
+}
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.footer-info {
+  width: 115px;
+  height: 24px;
+  left: 156px;
+  top: 3088px;
+}
+.logo-light {
+  color: #f4f4fd;
+}
+.footer-text {
+  color: #f4f4fd;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  max-width: 264px;
 }
