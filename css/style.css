@@ -1,0 +1,366 @@
+body {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  color: #212121; /* Tasarımdaki baskın renk */
+  background-color: #ffffff;
+}
+header {
+  align-items: center; /* Elemanları dikeyde ortalar */
+  border-bottom: 1px solid #e7e9fc; /* Tasarımdaki alt çizgi */
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  /* margin-right: 76px;*/
+  /*margin: 0 auto; /* Sağdan ve soldan otomatik boşluk bırakarak ortalar */
+  /*padding: 0 100px;*/
+  grid-auto-flow: horizontal;
+  display: flex;
+  margin-right: 76px;
+}
+.web {
+  color: #4d5ae5;
+}
+.studio {
+  color: #2e2f42;
+}
+.section {
+  padding: 120px 0;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-decoration: none;
+  padding: 24px 0;
+  display: block;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf;
+}
+.contacts-list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+.contacts-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455; /* Figma'daki Slate rengi */
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #404bbf;
+}
+header .container {
+  display: flex;
+  align-items: center; /* Dikeyde ortalar */
+}
+.contacts {
+  font-style: normal; /* Address etiketinin varsayılan italikliğini kaldırır */
+  margin-left: auto; /* İletişim bilgilerini en sağa iter */
+}
+.hero-section {
+  background-color: #2e2f42;
+  /* Üst ve alt için 188px, yanlar için 0 (Container ortalayacak) */
+  padding: 188px 0;
+  text-align: center;
+}
+
+.hero-section h1 {
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  /* Metnin Figma'daki gibi kırılması için genişliği sınırlıyoruz */
+  max-width: 496px;
+  /* Ortalamak ve butonla arasına 48px boşluk bırakmak için */
+  margin: 0 auto 48px auto;
+}
+
+.hero-section button {
+  display: block; /* margin: auto'nun çalışması için şart */
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  margin: 0 auto; /* Butonu merkeze alır */
+  padding: 16px 32px;
+
+  background-color: #4d5ae5;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  /* Hover efekti için geçiş */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-section button:hover,
+.hero-section button:focus {
+  background-color: #404bbf;
+}
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
+.features-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.features-list {
+  display: flex; /* Öğeleri yan yana dizer */
+  gap: 24px; /* Öğeler arasındaki boşluk (Figma'ya göre güncelleyebilirsiniz) */
+  list-style: none; /* Liste işaretlerini kaldırır */
+  padding: 0;
+  justify-content: center;
+}
+.features-item {
+  width: calc((100% - 72px) / 4); /* 4 öğeyi eşit genişlikte böler */
+  width: 264px; /* Figma'daki genişlik değeri */
+}
+
+.features-item h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42; /* Figma'daki Navy Blue rengi */
+  margin-bottom: 8px; /* Başlık ve metin arasındaki boşluk */
+}
+
+.features-item p {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455; /* Metin rengi (Slate) */
+}
+.team-heading {
+  padding-top: 120px;
+  /*margin-top: 120px;*/
+  margin-bottom: 72px;
+}
+.portfolio-heading {
+  margin-bottom: 72px;
+}
+h2 {
+  font-size: 36px;
+  color: #2e2f42;
+  font-style: bold;
+  font-weight: 700;
+  line-height: 40px;
+}
+h3 {
+  color: #2e2f42;
+  font-size: 20px;
+  font-style: medium;
+  font-weight: 500;
+  line-height: 24px;
+}
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.our-container {
+  /* width: 1158px;*/
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*justify-content: center;*/
+}
+
+.our-section {
+  text-align: center;
+  background-color: #f4f4fd;
+  /* width: 1440px;*/
+  padding-bottom: 120px;
+  /* height: 732px;
+  top: 1748px;*/
+}
+.our-section h2 {
+  color: #2e2f42;
+  font-size: 36px;
+  font-style: bold;
+  font-weight: 700;
+  font-family: "roboto", sans-serif;
+  text-align: center;
+  line-height: 40px;
+}
+.our-list {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+.our-item {
+  margin-right: 8px;
+  width: calc((100% - 72px) / 4); /* 4 öğeyi eşit genişlikte böler */
+  width: 264px; /* Figma'daki genişlik değeri */
+}
+
+/* Kartın genel stili */
+.our-item {
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px; /* Sadece alt köşeleri yuvarlatır */
+  box-shadow:
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2); /* Figma'daki Drop Shadow */
+}
+
+/* Metinlerin olduğu iç kısım */
+.card-content {
+  padding: 32px 0; /* Figma'daki 32px padding değerine göre */
+  text-align: center;
+}
+
+/* Resmin kartın üst kısmına tam oturması için */
+.our-item img {
+  display: block;
+  width: 100%;
+}
+.portfolio-container {
+  /* width: 1158px;*/
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio-section {
+  text-align: center;
+  /*width: 1440px;*/
+  /* height: 1240px;
+  top: 1748px;*/
+  border: 1px;
+  padding: 120px 0;
+}
+.portfolio-section h2 {
+  color: #2e2f42;
+  font-size: 36px;
+  font-style: bold;
+  font-weight: 700;
+  font-family: "roboto", sans-serif;
+  text-align: center;
+  line-height: 40px;
+}
+.portfolio-list {
+  display: flex; /* Öğeleri yan yana dizer */
+  gap: 24px; /* Öğeler arasındaki boşluk (Figma'ya göre güncelleyebilirsiniz) */
+  list-style: none; /* Liste işaretlerini kaldırır */
+  padding: 0;
+  justify-content: center;
+}
+.portfolio-item {
+  margin-bottom: 48px;
+  width: calc((100% - 48px) / 3);
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px; /* Sadece alt köşeleri yuvarlatır */
+  box-shadow:
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2); /* Figma'daki Drop Shadow */
+}
+.second-card-content {
+  padding: 32px 0;
+  text-align: left;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+.second-card-content h3 {
+  margin-bottom: 8px;
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.second-card-content p {
+  color: #434455;
+  font-size: 16px;
+  margin: 0;
+}
+.portfolio-item img {
+  display: block;
+  width: 100%;
+}
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+.footer {
+  background-color: #2e2f42;
+  padding: 100px 0;
+}
+.footer-container {
+  width: 1158px;
+  /* margin: 0 auto;*/
+  padding: 0 15px;
+  display: flex;
+  align-items: baseline; /* İçerik eklenirse taban çizgisinden hizalar */
+}
+.footer-brand {
+  /* display: flex;*/
+  flex-direction: column; /* Logoyu ve yazıyı alt alta dizer */
+  /* align-items: flex-start; /* İkisini de sol kenara yaslar */
+}
+.footer-logo {
+  display: inline-block;
+  /*  margin-bottom: 16px; /* Logo ile yazı arasındaki 16px boşluk */
+  /* Header'daki margin-right: 76px'i burada sıfırlamalıyız */
+  /* margin-right: 0; */
+}
+
+.studio-light {
+  color: #f4f4fd; /* Footer'daki açık renk Studio yazısı */
+}
+
+.footer-text {
+  color: #f4f4fd;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  max-width: 264px; /* Yazının Figma'daki gibi kırılması için */
+}
